@@ -9,6 +9,7 @@ $(function() {
     $.each(data.items, function(index,item){
       console.log(item);
       $("<img>").attr("src",item.media.m).appendTo('#flickr');
+      return false;
     });
   }).fail( function() {
     alert("AJAX call failed. ");
